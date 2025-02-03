@@ -1,0 +1,18 @@
+cricket
+3
+0 
+Longest format?
+t20
+ODI
+Test match
+c
+Ball colour in T20?
+Red
+Pink
+White
+c
+Most worldcups are won by?
+Austrailia
+England
+India
+a

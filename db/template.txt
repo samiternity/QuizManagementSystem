@@ -1,0 +1,9 @@
+t.name
+t.quesCount
+t.highScore
+q.text       // Question 1
+q.optA
+q.optB
+q.optC
+q.ans
+q.text       // Question 2... and so on

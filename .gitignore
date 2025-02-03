@@ -1,0 +1,44 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+out/
+
+# JetBrains IDEs (CLion)
+.idea/
+*.iml
+
+# Compiled files
+*.dll
+*.exe
+*.so
+*.dylib
+*.lib
+*.a
+*.o
+*.obj
+
+# Temp files
+*.log
+*.temp
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*~
+
+# Other IDEs
+.vs/
+.vscode/
+.vscode/**
+
+# Temp/test artifacts or user settings
+output/
+tests/output/
