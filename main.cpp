@@ -94,7 +94,7 @@ void registerUser() {
 }
 
 bool isUsernameUnique(const string &username) {
-    ifstream inFile("userDatabase.txt");
+    ifstream inFile("./db/userDatabase.txt");
     if (!inFile) {
         // File does not exist, assume unique
         return true;
@@ -112,7 +112,7 @@ bool isUsernameUnique(const string &username) {
 }
 
 void saveUserToFile(const string &userData) {
-    ofstream outFile("userDatabase.txt", ios::app); // Append mode
+    ofstream outFile("../db/userDatabase.txt", ios::app); // Append mode
     if (!outFile) {
         cout << "Error: Unable to save user data.\n";
         return;
@@ -166,7 +166,7 @@ void loginUser() {
 }
 
 bool validateLogin(const string &username, const string &password, const string &accountType) {
-    ifstream inFile("userDatabase.txt");
+    ifstream inFile("../db/userDatabase.txt");
     if (!inFile) {
         cout << "Error: Unable to open the database file.\n";
         return false;
@@ -189,8 +189,8 @@ void forgotPassword() {
     cout << "\n--- Forgot Password ---\n";
     cout << "Enter Username: ";
     cin >> username;
-    ifstream inFile("userDatabase.txt");
-    ofstream tempFile("tempDatabase.txt");
+    ifstream inFile("../db/userDatabase.txt");
+    ofstream tempFile("../db/tempDatabase.txt");
 
     if (!inFile || !tempFile) {
         cout << "Error: Unable to access the database.\n";
@@ -222,8 +222,8 @@ void forgotPassword() {
     inFile.close();
     tempFile.close();
 
-    remove("userDatabase.txt");
-    rename("tempDatabase.txt", "userDatabase.txt");
+    remove("../db/userDatabase.txt");
+    rename("../db/tempDatabase.txt", "../db/userDatabase.txt");
 
     if (!userFound) {
         cout << "Invalid username. Please try again.\n\n";

@@ -20,25 +20,38 @@ The **Quiz Management System** is a simple C++ application designed to manage qu
 
 To run the Quiz Management System, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/samiternity/QuizManagementSystem.git
-   cd QMS
    ```
 
-2. Build the project:
-    - Ensure you have CMake installed.
-    - Run the following commands in the project directory:
-      ```bash
-      cmake -S . -B build
-      cmake --build build
-      ```
-
-3. Run the executable (from the `build` directory):
+2. **Navigate to the project directory**:
    ```bash
-   ./QMS
+   cd QuizManagementSystem
    ```
-   *(On Windows, use `QMS.exe`.)*
+
+3. **Build the project**:
+   - Ensure you have CMake installed.
+   - Run the following commands in the project directory:
+
+   ```bash
+   cmake -S . -B build
+   ```
+
+   ```bash
+   cmake --build build
+   ```
+
+4. **Run the executable**:
+   - On Windows, navigate to the `build\Debug` directory and run:
+     ```bash
+     .\QMS.exe
+     ```
+
+   - On other systems, navigate to the `build` directory and run:
+     ```bash
+     ./QMS
+     ```
 
 ---
 
@@ -75,4 +88,4 @@ Please make sure that your code follows the existing structure and is well docum
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the LICENSE file for more details.
